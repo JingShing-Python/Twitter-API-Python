@@ -15,4 +15,4 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 for tweets in api.search_tweets(q="PixelArtFilterWeb", lang="en"):
-    print(tweets.text.split(' ')[-1])
+    print(tweets.text)
